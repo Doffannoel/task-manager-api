@@ -35,7 +35,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('taskmanager.tasks.urls')),  # Simple reference to match INSTALLED_APPS
+    path('api/', include('tasks.urls')),  # Simple reference to match INSTALLED_APPS
 
     # Swagger & Redoc Endpoints
     re_path(r'^swagger(?P<format>\.json|\.yaml)$',

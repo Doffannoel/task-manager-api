@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'taskmanager.tasks',  # Use full path for your tasks app
+    'tasks',  # Use full path for your tasks app
     'rest_framework',
     'django_filters',
     'drf_yasg',
