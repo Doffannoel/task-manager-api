@@ -143,22 +143,6 @@ python manage.py test
 
 ---
 
-## 📌 Commit Format
-
-Use this prefix format for all Git commits:
-```
-feat(talent-growth): <your description>
-```
-
-Examples:
-```
-feat(talent-growth): Add task create API
-feat(talent-growth): Integrate Swagger docs
-feat(talent-growth): Add Procfile for deployment
-```
-
----
-
 ## 👤 Author
 
 - Doffannoel Sihotang  
