@@ -22,7 +22,7 @@ A simple and scalable backend API built with Django REST Framework for managing 
 - Django 5.x
 - Django REST Framework
 - django-filter
-- gunicorn (for production deployment)
+- gunicorn (for later production deployment)
 
 ---
 
@@ -52,7 +52,7 @@ taskmanager/
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone https://github.com/Doffannoel/task-manager-api.git
    cd <repo-name>
    ```
 
