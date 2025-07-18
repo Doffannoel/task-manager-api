@@ -5,15 +5,12 @@ from django.utils import timezone
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:
         model = Task
-        fields = '__all__'
-
-    def validate_title(self, value):
-        if not value.strip():
-            raise serializers.ValidationError("Title cannot be empty.")
-        return value
-
+        fields = ['id', 'title', 'description', 'category', 'priority', 'status', 
+                 'deadline', 'created_at', 'updated_at']
+        read_only_fields = ['id', 'created_at', 'updated_at']
+    
     def validate_deadline(self, value):
-        if value < timezone.now():
-            raise serializers.ValidationError("Deadline must be in the future.")
+        if value and value < timezone.now():
+            raise serializers.ValidationError("Deadline cannot be in the past.")
         return value
 
