@@ -1,1 +1,1 @@
-web: gunicorn taskmanager.wsgi --workers 3 --bind 0.0.0.0:$PORT
+web: gunicorn taskmanager.taskmanager.wsgi
