@@ -13,7 +13,6 @@ A simple and scalable backend API built with Django REST Framework for managing 
 - 🔒 Input validation
 - 📄 Auto-generated Swagger API documentation
 - 🧪 Unit-tested business logic
-- ☁️ Deployable to cloud (e.g., Railway, Render)
 
 ---
 
@@ -22,7 +21,6 @@ A simple and scalable backend API built with Django REST Framework for managing 
 - Python 3.11+
 - Django 5.x
 - Django REST Framework
-- drf-yasg (Swagger Docs)
 - django-filter
 - gunicorn (for production deployment)
 
@@ -123,23 +121,6 @@ python manage.py test
 ```
 
 > Example test included for `POST /tasks/`. Additional tests recommended for full coverage.
-
----
-
-## ☁️ Deployment (Railway)
-
-1. **Files for deployment**:
-   - `Procfile`: tells Railway to run gunicorn
-   - `requirements.txt`: dependencies
-   - `.gitignore`: ignores virtual env
-   - `runtime.txt` (optional): e.g., `python-3.11.5`
-
-2. **Procfile contents:**
-   ```
-   web: gunicorn taskmanager.taskmanager.wsgi
-   ```
-
-3. **Push to GitHub, then connect repo to Railway**
 
 ---
 
