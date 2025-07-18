@@ -1,1 +1,1 @@
-web: PYTHONPATH=./taskmanager:. gunicorn taskmanager.taskmanager.wsgi
+web: PYTHONPATH=. gunicorn taskmanager.taskmanager.wsgi
